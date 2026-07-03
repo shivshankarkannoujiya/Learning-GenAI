@@ -11,3 +11,7 @@
   Examples: - What is 4 + 5
   Expected Output: 9 (Nine) - What is 10 + 20
   Expected Output: 30 (Thirty)
+
+3. Chain of though Prompting (COT): Instruction Hey model have some breakdown of the problem and then solve it before giving final output.
+
+- 
