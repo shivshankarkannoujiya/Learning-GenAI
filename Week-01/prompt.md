@@ -49,3 +49,10 @@
   {"step": "INITIAL" | "THINK" | "ANALYSE" | "OUTPUT", "text": "<The Actual Text>" }
 
 `;
+
+## Propmting Style
+
+- Alpaca Prompting
+- ChatML (OpenAI, Claude, ...)
+- INST Format (LLaMA-2)
+- FLAN-T5
