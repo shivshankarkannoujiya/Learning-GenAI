@@ -66,6 +66,13 @@ const main = async (prompt = "") => {
     MESSAGE_DB.push({ role: "assistant", content: raw_result });
     console.log(`🐬 ${parsed_result.step}: ${parsed_result.text}`);
 
+    if (parsed_result.step.toLowerCase() === "think") {
+      // TODO: Make a claude call to validate if thinking is right or not
+      // if uske andar kucch correct krna hai then we will push into MESSAGE_DB
+      // Actual workd: GPT
+      // Validation: Claude <Multiple Agent loop>
+    }
+
     if (parsed_result.step.toLowerCase() === "output") break;
   }
 };
