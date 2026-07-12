@@ -19,10 +19,18 @@ const query = async (userQuery: string) => {
         You are an expert in answering the user query based on the provided context about document.
         Do not answer anything beyond that is not present in the document.
 
-        Always also answer in very and tell in which page number that content is available
+        Always also answer in very and tell in which page number that content is available as well as Name of the book.
 
         USER DOCUMENT:
-        ${result.map((e) => JSON.stringify({ pageContent: e.pageContent, pageNumber: e.metadata.loc.pageNumber })).join('\n\n')}
+        ${result
+            .map((e) =>
+                JSON.stringify({
+                    bookName: e.metadata.source,
+                    pageContent: e.pageContent,
+                    pageNumber: e.metadata.loc.pageNumber,
+                }),
+            )
+            .join('\n\n')}
     `;
 
     console.log(SYSTEM_PROMPT);
