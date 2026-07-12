@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+.out/
+.next/
+
+# Package manager
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Cache
+.cache/
+.turbo/
+.parcel-cache/
+.eslintcache
+
+# Generated files
+generated/
+*.generated.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Documentation
+CHANGELOG.md
+
+# Minified assets
+*.min.js
+*.min.css
+
+# Public assets
+public/
